@@ -3,10 +3,11 @@ import Avatar from '../components/Avatar'
 import {MicrophoneIcon, ViewGridIcon} from "@heroicons/react/solid"
 import {SearchIcon} from "@heroicons/react/outline"
 import Image from "next/image"
+import Footer from '../Footer'
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col justify-center h-screen">
       <Head>
         <title>Google App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -46,7 +47,10 @@ export default function Home() {
           <button className="btn">Google Search</button>
           <button className="btn" >I'm Feeling Lucky</button>
         </div>
-      </form>
+
+      </form> 
+        
+      <Footer />
     </div>
   )
 }
