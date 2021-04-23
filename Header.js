@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router';
 import React, { useRef } from 'react'
 import Avatar from './components/Avatar';
+import HeaderOptions from './HeaderOptions';
 
 function Header() {
     const router = useRouter();
@@ -43,6 +44,8 @@ function Header() {
                 </form>
                 <Avatar className="ml-auto" url="https://media-exp1.licdn.com/dms/image/C4D35AQH4tXKFfESRwA/profile-framedphoto-shrink_200_200/0/1613494608179?e=1619092800&v=beta&t=lxfVwuBBOsY3qx073mzKRX2n3PZjo25ubLsX75uRwAk" />
             </div>
+            <HeaderOptions />
+
         </header>
     )
 }
